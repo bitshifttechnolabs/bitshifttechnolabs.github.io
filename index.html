@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
@@ -35,32 +36,41 @@
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <h1>Transforming Ideas into <span class="gradient-text">Digital Excellence</span></h1>
-        <p class="subtitle">Full-stack development agency specializing in custom software solutions</p>
-
-        <div class="buttons">
-            <a href="#contact" class="cta-button">Start Project</a>
-            <a href="#portfolio" class="secondary-button">View Work</a>
+    <section id="home" class="hero px-6 py-16 text-center md:text-left">
+        <h1 class="text-3xl md:text-5xl font-bold">
+            Transforming Ideas into <span class="gradient-text">Digital Excellence</span>
+        </h1>
+        <p class="subtitle text-lg md:text-xl mt-4">
+            Full-stack development agency specializing in custom software solutions
+        </p>
+    
+        <div class="buttons flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-6">
+            <a href="#contact" class="cta-button py-3 px-6 text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition">
+                Start Project
+            </a>
+            <a href="#portfolio" class="secondary-button py-3 px-6 border border-gray-300 rounded-lg shadow-md hover:bg-gray-100 transition">
+                View Work
+            </a>
         </div>
-
-        <div class="stats-grid">
-            <div class="stat-box">
-                <div class="stat-number">100+</div>
-                <div class="stat-label">Projects Delivered</div>
+    
+        <div class="stats-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12">
+            <div class="stat-box bg-gray-800 text-white p-6 rounded-lg shadow-md">
+                <div class="stat-number text-4xl font-bold">100+</div>
+                <div class="stat-label text-sm uppercase mt-2">Projects Delivered</div>
             </div>
-
-            <div class="stat-box">
-                <div class="stat-number">50+</div>
-                <div class="stat-label">Happy Clients</div>
+    
+            <div class="stat-box bg-gray-800 text-white p-6 rounded-lg shadow-md">
+                <div class="stat-number text-4xl font-bold">50+</div>
+                <div class="stat-label text-sm uppercase mt-2">Happy Clients</div>
             </div>
-
-            <div class="stat-box">
-                <div class="stat-number">5+</div>
-                <div class="stat-label">Years Experience</div>
+    
+            <div class="stat-box bg-gray-800 text-white p-6 rounded-lg shadow-md">
+                <div class="stat-number text-4xl font-bold">5+</div>
+                <div class="stat-label text-sm uppercase mt-2">Years Experience</div>
             </div>
         </div>
     </section>
+    
 
     <!-- About Section -->
     <section id="about" class="about">
